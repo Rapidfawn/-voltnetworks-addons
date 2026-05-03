@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VoltNetworks Admin</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../index.html">
+      <span class="brand-icon">⚡</span>
+      <span>
+        <strong>VoltNetworks</strong>
+        <small>Admin Editor</small>
+      </span>
+    </a>
+    <nav>
+      <a href="../index.html">Store</a>
+      <a href="index.html">Admin</a>
+    </nav>
+  </header>
+
+  <main class="admin-wrap">
+    <section class="admin-panel">
+      <p class="eyebrow">Static Admin Helper</p>
+      <h1>Add-on Editor</h1>
+
+      <div class="admin-note">
+        <strong>Important:</strong> GitHub Pages cannot run a secure private login by itself.
+        This editor helps you edit your <code>addons.json</code> file.
+        After editing, copy the generated JSON and replace the content inside your GitHub
+        <code>addons.json</code> file.
+      </div>
+
+      <button class="admin-btn" onclick="loadJson()">Load Current Add-ons</button>
+      <button class="admin-btn" onclick="addAddon()">Add New Add-on</button>
+      <button class="admin-btn" onclick="downloadJson()">Download addons.json</button>
+
+      <p class="admin-note">
+        To edit: change the text below. To add an add-on manually, copy one object and change its values.
+      </p>
+
+      <textarea id="jsonEditor" spellcheck="false"></textarea>
+    </section>
+  </main>
+
+  <script>
+    async function loadJson() {
+      const editor = document.getElementById("jsonEditor");
+      const res = await fetch("../addons.json");
+      const data = await res.json();
+      editor.value = JSON.stringify(data, null, 2);
+    }
+
+    function addAddon() {
+      const editor = document.getElementById("jsonEditor");
+      let data = [];
+      try {
+        data = editor.value.trim() ? JSON.parse(editor.value) : [];
+      } catch {
+        alert("Your JSON has an error. Fix it before adding another add-on.");
+        return;
+      }
+
+      data.push({
+        id: "new-addon",
+        name: "New VoltNetworks Add-on",
+        tag: "NEW ADD-ON",
+        description: "Write your add-on description here.",
+        features: ["Feature one", "Feature two", "Feature three"],
+        price: "0.00",
+        currency: "GBP",
+        download: "files/new-addon.zip",
+        paypalEmail: "YOUR_PAYPAL_EMAIL@example.com",
+        accent: "green"
+      });
+
+      editor.value = JSON.stringify(data, null, 2);
+    }
+
+    function downloadJson() {
+      const editor = document.getElementById("jsonEditor");
+
+      try {
+        JSON.parse(editor.value);
+      } catch {
+        alert("Your JSON has an error. Fix it before downloading.");
+        return;
+      }
+
+      const blob = new Blob([editor.value], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "addons.json";
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    loadJson();
+  </script>
+</body>
+</html>
