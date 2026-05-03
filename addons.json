@@ -12,7 +12,7 @@
     "price": "14.99",
     "currency": "GBP",
     "download": "files/prisons-addon.zip",
-    "paypalEmail": "YOUR_PAYPAL_EMAIL@example.com",
+    "paypalEmail": "craigryanellis27@gmail.com",
     "accent": "orange"
   },
   {
@@ -28,7 +28,7 @@
     "price": "16.99",
     "currency": "GBP",
     "download": "files/skyblock-addon.zip",
-    "paypalEmail": "YOUR_PAYPAL_EMAIL@example.com",
+    "paypalEmail": "craigryanellis27@gmail.com",
     "accent": "blue"
   },
   {
@@ -44,7 +44,7 @@
     "price": "0.00",
     "currency": "GBP",
     "download": "files/custom-addon-3.zip",
-    "paypalEmail": "YOUR_PAYPAL_EMAIL@example.com",
+    "paypalEmail": "craigryanellis27@gmail.com",
     "accent": "green"
   },
   {
@@ -60,7 +60,7 @@
     "price": "0.00",
     "currency": "GBP",
     "download": "files/custom-addon-4.zip",
-    "paypalEmail": "YOUR_PAYPAL_EMAIL@example.com",
+    "paypalEmail": "craigryanellis27@gmail.com",
     "accent": "purple"
   }
 ]
