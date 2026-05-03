@@ -11,8 +11,8 @@
     ],
     "price": "14.99",
     "currency": "GBP",
-    "download": "files/prisons-addon.zip",
-    "paypalEmail": "craigryanellis27@gmail.com",
+    "paypalEmail": "YOUR_PAYPAL_EMAIL@example.com",
+    "discordTicketUrl": "https://discord.gg/YOUR_DISCORD_INVITE",
     "accent": "orange"
   },
   {
@@ -27,15 +27,15 @@
     ],
     "price": "16.99",
     "currency": "GBP",
-    "download": "files/skyblock-addon.zip",
-    "paypalEmail": "craigryanellis27@gmail.com",
+    "paypalEmail": "YOUR_PAYPAL_EMAIL@example.com",
+    "discordTicketUrl": "https://discord.gg/YOUR_DISCORD_INVITE",
     "accent": "blue"
   },
   {
     "id": "custom-addon-3",
     "name": "Your Custom Add-on #3",
     "tag": "NEW ADD-ON",
-    "description": "Edit this add-on in addons.json or through the admin editor.",
+    "description": "Edit this add-on in addons.json. Customers pay first, then open a Discord ticket to claim the file.",
     "features": [
       "Feature one",
       "Feature two",
@@ -43,24 +43,8 @@
     ],
     "price": "0.00",
     "currency": "GBP",
-    "download": "files/custom-addon-3.zip",
-    "paypalEmail": "craigryanellis27@gmail.com",
+    "paypalEmail": "YOUR_PAYPAL_EMAIL@example.com",
+    "discordTicketUrl": "https://discord.gg/YOUR_DISCORD_INVITE",
     "accent": "green"
-  },
-  {
-    "id": "custom-addon-4",
-    "name": "Your Custom Add-on #4",
-    "tag": "NEW ADD-ON",
-    "description": "Copy this object inside addons.json to add more than 10 add-ons.",
-    "features": [
-      "Feature one",
-      "Feature two",
-      "Feature three"
-    ],
-    "price": "0.00",
-    "currency": "GBP",
-    "download": "files/custom-addon-4.zip",
-    "paypalEmail": "craigryanellis27@gmail.com",
-    "accent": "purple"
   }
 ]
