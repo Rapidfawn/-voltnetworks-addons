@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: rapidfawn2489/voltnetworks-addons
   branch: main
 
 media_folder: "images/uploads"
@@ -29,12 +30,4 @@ collections:
                 field: { label: "Feature", name: "feature", widget: "string" }
               - { label: "Price", name: "price", widget: "string" }
               - { label: "Currency", name: "currency", widget: "string", default: "GBP" }
-              - { label: "PayPal Email", name: "paypalEmail", widget: "string", default: "craigryanellis27@gmail.com" }
-              - { label: "Discord Ticket URL", name: "discordTicketUrl", widget: "string", default: "https://discord.gg/q6v65y9grK" }
-              - { label: "Ticket Channel ID", name: "ticketChannelId", widget: "string", default: "1432064994559918120" }
-              - { label: "Product Image", name: "image", widget: "image", required: false }
-              - label: "Accent Colour"
-                name: "accent"
-                widget: "select"
-                options: ["orange", "blue", "green", "purple"]
-                default: "green"
+              - { label: "Image", name: "image", widget: "image", required: false }
