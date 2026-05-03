@@ -2,6 +2,7 @@ backend:
   name: github
   repo: rapidfawn2489/voltnetworks-addons
   branch: main
+  client_id: Ov23lilYP4uAz8TZt4I3
 
 media_folder: "images/uploads"
 public_folder: "images/uploads"
