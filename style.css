@@ -1,0 +1,167 @@
+/*
+  Stylesheet for the VoltNetworks add‑on site.
+
+  This file defines a simple yet characterful design inspired by Minecraft. The
+  use of the Press Start 2P font and green accents gives the page a retro,
+  blocky feel. Adjust colours and spacing here to suit your preferences.
+*/
+
+/* Reset some default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Hero section with decorative image */
+.hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  /* Gradient background evoking Minecraft grass and foliage */
+  background: linear-gradient(180deg, #3b7e26 0%, #2e5b1c 100%);
+  /* Give the hero section height even when no image is present */
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 2px 2px 0px #000;
+}
+
+.hero-content h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1rem;
+}
+
+/* General sections */
+.about,
+.addons {
+  padding: 2em;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about h2,
+.addons h2 {
+  color: #388E3C;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Add‑on cards */
+.addon {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.addon-title {
+  color: #4CAF50;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.addon-description {
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.addon-features {
+  font-size: 0.8rem;
+  margin-left: 1.2em;
+  margin-bottom: 1em;
+}
+
+.addon-features li {
+  margin-bottom: 0.4em;
+}
+
+.purchase-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 0.8em;
+}
+
+.purchase-options form {
+  margin-right: 2em;
+}
+
+.bank-transfer {
+  font-size: 0.7rem;
+  background: #f9f9f9;
+  padding: 0.6em;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  max-width: 220px;
+}
+
+.bank-transfer h4 {
+  margin-bottom: 0.3em;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  font-size: 0.8rem;
+}
+
+.download-link:hover {
+  background-color: #388E3C;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.7rem;
+}
