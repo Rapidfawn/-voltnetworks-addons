@@ -12,6 +12,8 @@
     "price": "14.99",
     "currency": "GBP",
     "paypalEmail": "craigryanellis27@gmail.com",
+    "discordTicketUrl": "https://discord.gg/q6v65y9grK",
+    "ticketChannelId": "1432064994559918120",
     "accent": "orange"
   },
   {
@@ -27,13 +29,15 @@
     "price": "16.99",
     "currency": "GBP",
     "paypalEmail": "craigryanellis27@gmail.com",
+    "discordTicketUrl": "https://discord.gg/q6v65y9grK",
+    "ticketChannelId": "1432064994559918120",
     "accent": "blue"
   },
   {
     "id": "custom-addon-3",
     "name": "Your Custom Add-on #3",
     "tag": "NEW ADD-ON",
-    "description": "Edit this add-on in addons.json or through the admin editor.",
+    "description": "Edit this add-on in addons.json. Customers pay first, then open a Discord ticket to claim the file.",
     "features": [
       "Feature one",
       "Feature two",
@@ -42,6 +46,8 @@
     "price": "0.00",
     "currency": "GBP",
     "paypalEmail": "craigryanellis27@gmail.com",
+    "discordTicketUrl": "https://discord.gg/q6v65y9grK",
+    "ticketChannelId": "1432064994559918120",
     "accent": "green"
   },
   {
@@ -57,6 +63,8 @@
     "price": "0.00",
     "currency": "GBP",
     "paypalEmail": "craigryanellis27@gmail.com",
+    "discordTicketUrl": "https://discord.gg/q6v65y9grK",
+    "ticketChannelId": "1432064994559918120",
     "accent": "purple"
   }
 ]
