@@ -1,167 +1,289 @@
-/*
-  Stylesheet for the VoltNetworks add‑on site.
-
-  This file defines a simple yet characterful design inspired by Minecraft. The
-  use of the Press Start 2P font and green accents gives the page a retro,
-  blocky feel. Adjust colours and spacing here to suit your preferences.
-*/
-
-/* Reset some default margins */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul {
-  margin: 0;
-  padding: 0;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Press Start 2P', cursive, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-  line-height: 1.4;
+  margin: 0;
+  background: #080d10;
+  color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Hero section with decorative image */
-.hero {
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-  /* Gradient background evoking Minecraft grass and foliage */
-  background: linear-gradient(180deg, #3b7e26 0%, #2e5b1c 100%);
-  /* Give the hero section height even when no image is present */
-  min-height: 220px;
+.site-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: #0b1115;
+  border-bottom: 1px solid #1d2a30;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bolt {
+  color: #68d957;
+  font-size: 30px;
+}
+
+.brand h1 {
+  font-size: 22px;
+  margin: 0;
+  line-height: 1;
+}
+
+.brand p {
+  color: #68d957;
+  margin: 3px 0 0;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  gap: 14px;
+}
+
+nav a {
+  color: #d6d6d6;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #68d957;
+}
+
+.hero {
+  min-height: 330px;
+  display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.hero-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  filter: brightness(0.8);
-}
-
-.hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  text-shadow: 2px 2px 0px #000;
-}
-
-.hero-content h1 {
-  font-size: 2.4rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-content p {
-  font-size: 1rem;
-}
-
-/* General sections */
-.about,
-.addons {
-  padding: 2em;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.about h2,
-.addons h2 {
-  color: #388E3C;
-  margin-bottom: 1rem;
-}
-
-.about p {
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
-}
-
-/* Add‑on cards */
-.addon {
-  background-color: #fff;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  padding: 1.5em;
-  margin-bottom: 2em;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.addon-title {
-  color: #4CAF50;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.addon-description {
-  font-size: 0.8rem;
-  margin-bottom: 0.8rem;
-}
-
-.addon-features {
-  font-size: 0.8rem;
-  margin-left: 1.2em;
-  margin-bottom: 1em;
-}
-
-.addon-features li {
-  margin-bottom: 0.4em;
-}
-
-.purchase-options {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  margin-top: 0.8em;
-}
-
-.purchase-options form {
-  margin-right: 2em;
-}
-
-.bank-transfer {
-  font-size: 0.7rem;
-  background: #f9f9f9;
-  padding: 0.6em;
-  border: 1px dashed #ccc;
-  border-radius: 4px;
-  max-width: 220px;
-}
-
-.bank-transfer h4 {
-  margin-bottom: 0.3em;
-  color: #333;
-  font-size: 0.8rem;
-}
-
-.download-link {
-  display: inline-block;
-  margin-top: 1em;
-  padding: 0.5em 1em;
-  background-color: #4CAF50;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.2s;
-  font-size: 0.8rem;
-}
-
-.download-link:hover {
-  background-color: #388E3C;
-}
-
-/* Footer styles */
-footer {
-  background-color: #333;
-  color: #fff;
   text-align: center;
-  padding: 1em;
-  font-size: 0.7rem;
+  background:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
+    linear-gradient(135deg, #244b1f, #0d1e30 45%, #1e381c);
+  border-bottom: 1px solid #1d2a30;
+}
+
+.hero-overlay {
+  padding: 50px 20px;
+  max-width: 850px;
+}
+
+.hero h2 {
+  font-size: clamp(36px, 7vw, 76px);
+  margin: 0 0 16px;
+  line-height: .95;
+  text-shadow: 4px 4px 0 #000;
+}
+
+.hero p {
+  font-size: clamp(16px, 3vw, 22px);
+  color: #e6e6e6;
+  margin: 0 auto 24px;
+  max-width: 680px;
+}
+
+.hero-btn,
+.actions a,
+.actions button {
+  background: linear-gradient(#65c956, #3c9632);
+  border: 0;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 4px 0 #205c1d;
+}
+
+main {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+.intro,
+.payment-box,
+.contact-box {
+  background: #10171c;
+  border: 1px solid #26343d;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 28px;
+}
+
+.intro h2,
+.section-title h2,
+.payment-box h2,
+.contact-box h2 {
+  color: #68d957;
+  margin-top: 0;
+}
+
+.intro p,
+.section-title p,
+.payment-box p,
+.contact-box p,
+.addon-content p,
+.addon-content li {
+  color: #cbd2d6;
+  line-height: 1.6;
+}
+
+.section-title {
+  margin: 30px 0 20px;
+}
+
+.addon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.addon-card {
+  background: #10171c;
+  border: 1px solid #26343d;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,.28);
+}
+
+.addon-image {
+  min-height: 170px;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 3px 3px 0 #000;
+  padding: 18px;
+}
+
+.prisons {
+  background: linear-gradient(135deg, #3a3a3a, #141414 55%, #ff8b00);
+}
+
+.skyblock {
+  background: linear-gradient(135deg, #179bc7, #143b5a 55%, #63d957);
+}
+
+.custom {
+  background: linear-gradient(135deg, #1f3f25, #10171c 60%, #68d957);
+}
+
+.addon-content {
+  padding: 20px;
+}
+
+.addon-content h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.addon-content ul {
+  padding-left: 20px;
+}
+
+.price {
+  color: #68d957;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 15px 0;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.actions form {
+  margin: 0;
+}
+
+.bank-details {
+  background: #0b1115;
+  border: 1px dashed #3e535e;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 15px;
+  background: #0b1115;
+  border-top: 1px solid #1d2a30;
+  color: #9ba7ad;
+}
+
+/* Mobile fixes */
+@media (max-width: 720px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 16px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 260px;
+  }
+
+  .hero h2 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  main {
+    width: 94%;
+    padding-top: 22px;
+  }
+
+  .addon-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .addon-image {
+    min-height: 140px;
+    font-size: 24px;
+  }
+
+  .addon-content h3 {
+    font-size: 20px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions button,
+  .actions a {
+    width: 100%;
+    text-align: center;
+  }
 }
