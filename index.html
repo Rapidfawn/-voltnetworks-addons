@@ -3,175 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VoltNetworks Add-ons</title>
+  <title>VoltNetworks Add-ons Store</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-icon">⚡</span>
+      <span>
+        <strong>VoltNetworks</strong>
+        <small>Add-ons Store</small>
+      </span>
+    </a>
 
-<header class="site-header">
-  <div class="brand">
-    <span class="bolt">⚡</span>
-    <div>
-      <h1>VoltNetworks</h1>
-      <p>Add-ons Store</p>
-    </div>
-  </div>
-  <nav>
-    <a href="#addons">Add-ons</a>
-    <a href="#payments">Payments</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+    <nav>
+      <a href="#addons">Add-ons</a>
+      <a href="#payments">Payments</a>
+      <a href="admin/index.html">Admin</a>
+    </nav>
+  </header>
 
-<section class="hero">
-  <div class="hero-overlay">
-    <h2>VoltNetworks Add-ons</h2>
-    <p>Premium Minecraft Bedrock add-ons for realms, servers and creators.</p>
-    <a href="#addons" class="hero-btn">View Add-ons</a>
-  </div>
-</section>
-
-<main>
-  <section class="intro">
-    <h2>Welcome</h2>
-    <p>
-      Browse powerful Minecraft add-ons built for creators who want cleaner menus,
-      advanced systems and premium gameplay features.
-    </p>
-  </section>
-
-  <section id="addons" class="addons-section">
-    <div class="section-title">
-      <h2>All Add-ons</h2>
-      <p>Edit these cards in <strong>index.html</strong> whenever you create a new add-on.</p>
-    </div>
-
-    <div class="addon-grid">
-
-      <article class="addon-card">
-        <div class="addon-image prisons">Ultimate Prisons</div>
-        <div class="addon-content">
-          <h3>VoltNetworks Ultimate Prisons</h3>
-          <p>The ultimate prisons add-on for you to create your own prisons. It has loads of features for you to play with.</p>
-          <ul>
-            <li>Custom prison systems</li>
-            <li>Mines, ranks and shops</li>
-            <li>Admin friendly setup</li>
-          </ul>
-          <div class="price">£14.99</div>
-          <div class="actions">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-              <input type="hidden" name="cmd" value="_xclick">
-              <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL@example.com">
-              <input type="hidden" name="item_name" value="VoltNetworks Ultimate Prisons">
-              <input type="hidden" name="amount" value="14.99">
-              <input type="hidden" name="currency_code" value="GBP">
-              <button type="submit">PayPal</button>
-            </form>
-            <a href="files/prisons-addon.zip" download>Download</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="addon-card">
-        <div class="addon-image skyblock">Ultimate Skyblock</div>
-        <div class="addon-content">
-          <h3>VoltNetworks Ultimate Skyblock</h3>
-          <p>This is the ultimate Skyblock. It contains loads of advanced features like minions, auto plot generations, shops, auction generators and much more.</p>
-          <ul>
-            <li>Minions and generators</li>
-            <li>Auto plot generation</li>
-            <li>Shops and auctions</li>
-          </ul>
-          <div class="price">£16.99</div>
-          <div class="actions">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-              <input type="hidden" name="cmd" value="_xclick">
-              <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL@example.com">
-              <input type="hidden" name="item_name" value="VoltNetworks Ultimate Skyblock">
-              <input type="hidden" name="amount" value="16.99">
-              <input type="hidden" name="currency_code" value="GBP">
-              <button type="submit">PayPal</button>
-            </form>
-            <a href="files/skyblock-addon.zip" download>Download</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Copy and edit these placeholder cards for future add-ons -->
-      <article class="addon-card">
-        <div class="addon-image custom">New Add-on</div>
-        <div class="addon-content">
-          <h3>Your Custom Add-on #3</h3>
-          <p>Add your add-on description here. Explain what it does and why players should use it.</p>
-          <ul>
-            <li>Feature one</li>
-            <li>Feature two</li>
-            <li>Feature three</li>
-          </ul>
-          <div class="price">£0.00</div>
-          <div class="actions">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-              <input type="hidden" name="cmd" value="_xclick">
-              <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL@example.com">
-              <input type="hidden" name="item_name" value="Your Custom Add-on #3">
-              <input type="hidden" name="amount" value="0.00">
-              <input type="hidden" name="currency_code" value="GBP">
-              <button type="submit">PayPal</button>
-            </form>
-            <a href="files/custom-addon-3.zip" download>Download</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="addon-card">
-        <div class="addon-image custom">New Add-on</div>
-        <div class="addon-content">
-          <h3>Your Custom Add-on #4</h3>
-          <p>Add your add-on description here. Copy this card to add more than 10 add-ons.</p>
-          <ul>
-            <li>Feature one</li>
-            <li>Feature two</li>
-            <li>Feature three</li>
-          </ul>
-          <div class="price">£0.00</div>
-          <div class="actions">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-              <input type="hidden" name="cmd" value="_xclick">
-              <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL@example.com">
-              <input type="hidden" name="item_name" value="Your Custom Add-on #4">
-              <input type="hidden" name="amount" value="0.00">
-              <input type="hidden" name="currency_code" value="GBP">
-              <button type="submit">PayPal</button>
-            </form>
-            <a href="files/custom-addon-4.zip" download>Download</a>
-          </div>
-        </div>
-      </article>
-
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Minecraft Bedrock Add-ons</p>
+      <h1>VoltNetworks Add-ons</h1>
+      <p class="hero-text">
+        Premium tools, systems and add-ons for realms, servers and creators.
+      </p>
+      <div class="hero-actions">
+        <a href="#addons" class="primary-btn">Browse Add-ons</a>
+        <a href="#payments" class="secondary-btn">Payment Info</a>
+      </div>
     </div>
   </section>
 
-  <section id="payments" class="payment-box">
-    <h2>Bank Transfer</h2>
-    <p>Use this section if a customer wants to pay by bank transfer.</p>
-    <div class="bank-details">
-      <p><strong>Bank:</strong> Your Bank Name</p>
-      <p><strong>Sort Code:</strong> 00-00-00</p>
-      <p><strong>Account Number:</strong> 12345678</p>
-      <p><strong>Reference:</strong> Add-on name + customer name</p>
-    </div>
-  </section>
+  <main>
+    <section class="intro">
+      <h2>Welcome</h2>
+      <p>
+        Browse powerful Minecraft add-ons built for creators who want cleaner menus,
+        advanced systems and premium gameplay features.
+      </p>
+    </section>
 
-  <section id="contact" class="contact-box">
-    <h2>Need Support?</h2>
-    <p>Join the VoltNetworks Discord or open a support ticket if you need help with an add-on.</p>
-  </section>
-</main>
+    <section id="addons">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">All Products</p>
+          <h2>Available Add-ons</h2>
+        </div>
+        <p class="hint">Add-ons load from <code>addons.json</code></p>
+      </div>
 
-<footer>
-  <p>© 2026 VoltNetworks Add-ons — Created by rapidfawn2489</p>
-</footer>
+      <div id="addonGrid" class="addon-grid"></div>
+    </section>
 
+    <section id="payments" class="payment-panel">
+      <div>
+        <p class="eyebrow">Manual Payments</p>
+        <h2>Bank Transfer</h2>
+        <p>Use this for customers who do not want to pay through PayPal.</p>
+      </div>
+
+      <div class="bank-box">
+        <p><strong>Bank:</strong> Your Bank Name</p>
+        <p><strong>Sort Code:</strong> 00-00-00</p>
+        <p><strong>Account Number:</strong> 12345678</p>
+        <p><strong>Reference:</strong> Add-on name + customer name</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 VoltNetworks Add-ons — Created by rapidfawn2489</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "ultimate-prisons",
+    "name": "VoltNetworks Ultimate Prisons",
+    "tag": "PRISONS",
+    "description": "The ultimate prisons add-on for you to create your own prisons. It has loads of features for you to play with.",
+    "features": [
+      "Custom prison systems",
+      "Mines, ranks and shops",
+      "Admin friendly setup"
+    ],
+    "price": "14.99",
+    "currency": "GBP",
+    "download": "files/prisons-addon.zip",
+    "paypalEmail": "YOUR_PAYPAL_EMAIL@example.com",
+    "accent": "orange"
+  },
+  {
+    "id": "ultimate-skyblock",
+    "name": "VoltNetworks Ultimate Skyblock",
+    "tag": "SKYBLOCK",
+    "description": "This is the ultimate Skyblock. It contains advanced features like minions, auto plot generations, shops, auction generators and much more.",
+    "features": [
+      "Minions and generators",
+      "Auto plot generation",
+      "Shops and auction house"
+    ],
+    "price": "16.99",
+    "currency": "GBP",
+    "download": "files/skyblock-addon.zip",
+    "paypalEmail": "YOUR_PAYPAL_EMAIL@example.com",
+    "accent": "blue"
+  },
+  {
+    "id": "custom-addon-3",
+    "name": "Your Custom Add-on #3",
+    "tag": "NEW ADD-ON",
+    "description": "Edit this add-on in addons.json or through the admin editor.",
+    "features": [
+      "Feature one",
+      "Feature two",
+      "Feature three"
+    ],
+    "price": "0.00",
+    "currency": "GBP",
+    "download": "files/custom-addon-3.zip",
+    "paypalEmail": "YOUR_PAYPAL_EMAIL@example.com",
+    "accent": "green"
+  },
+  {
+    "id": "custom-addon-4",
+    "name": "Your Custom Add-on #4",
+    "tag": "NEW ADD-ON",
+    "description": "Copy this object inside addons.json to add more than 10 add-ons.",
+    "features": [
+      "Feature one",
+      "Feature two",
+      "Feature three"
+    ],
+    "price": "0.00",
+    "currency": "GBP",
+    "download": "files/custom-addon-4.zip",
+    "paypalEmail": "YOUR_PAYPAL_EMAIL@example.com",
+    "accent": "purple"
+  }
+]
